@@ -1,0 +1,436 @@
+@import "nib"
+@import "normalize.styl"
+@import "fonts.styl"
+
+// animacion (parametro)
+// 	-webkit-animation parametro
+// 	-moz-animation parametro
+// 	-o-animation parametro
+// 	-ms-animation parametro
+// 	animation parametro
+
+
+gris_oscuro = #333333
+azul_app = rgb(43, 166, 203)
+gris_mas_claro = #F0F0F0
+gris_app = rgb(51,51,51)
+rojo = #BD255B 
+azul_contraste = rgba(22, 108, 164, 1)
+
+
+body
+	font-size 16px
+	font-family 'Sofadi One'
+	background gris_oscuro
+
+figure
+	margin 0
+
+a
+	text-decoration none
+
+img
+	vertical-align top
+
+ul
+	margin 0 
+	padding 0
+
+.padding-tb
+	padding 1em 0	
+
+.container
+	padding 1.4em
+	font-size 0
+	text-align center
+
+
+.name
+	color gris_oscuro
+
+.author
+	color azul_app
+
+.button-menu
+	color gris_oscuro
+	left .5em
+	margin-top -10px
+	position absolute
+	top 50%	
+
+.relative
+	position relative
+
+.border-top
+	border-bottom 1px solid azul_app
+
+.header
+	height 3.5em
+	.font-image
+		background azul_contraste
+		height 100%
+		width 100%
+		position absolute
+	.title
+		font-size 1.1em
+		line-height 3.5em 
+		margin 0 
+		text-align center
+
+.menu
+	display none
+		
+.center-block //centra la imagen a los costados
+	margin 0 auto
+
+.center-text
+	text-align center
+
+.actions
+	background rgba(black, .3)
+	bottom 0
+	left 0
+	position absolute
+	right 0
+
+.padding
+	padding 1em
+
+.action
+	font-size 1.2em
+	color rojo
+	margin-right .5em
+	&:last-child
+		margin-right 0
+	&.gray
+		color azul_app
+
+.right-text
+	text-align right
+
+
+//animacion de la barra de estado de la cancion
+@keyframes state	
+	0%
+		width 0
+	100%
+		width 100% 
+
+@keyframes circle
+	0%
+		transform scale(1)
+
+	100%
+		transform scale(1.1)
+		opacity .5
+		transform traslate (1px 2px 4em)
+
+.left
+	float left
+
+.right 
+	float right
+
+.input
+	border 1px solid azul_app
+	border-radius 5px
+	height 2.5em
+	padding 0 1em 0 2em
+
+
+.isotipo
+	width 122px
+
+.logo
+	overflow hidden
+	background white
+	display none
+
+.avatar
+	border-radius 50%
+	width 38px
+	height 38px
+
+.user
+	width 13em
+	font-size 1.2em
+	
+.username
+	color azul_app
+	position relative 
+	top 10px
+	margin-left .5em
+	margin-right .5em
+	&:hover
+		text-shadow: 1px 1px 2px black, 0 0 1em azul_app, 0 0 0.2em azul_app
+	&:after
+		border-left 7px solid transparent
+		border-right 7px solid transparent
+		border-top 9px solid azul_app
+		content ""
+		display inline-block
+		margin-left .3em
+		margin-bottom .1em
+	
+.desplegable
+	height 500px
+	width 320px
+	display none
+	position relative
+
+.transparent
+	position absolute
+	background black 
+	opacity .5
+	height 500px
+	width 320px
+	
+.menuDesplegable
+	.buscador
+		margin 0 2.1em
+		padding 1em 0
+		position relative
+		input 
+			border-radius 10px  
+			padding .4em	
+			margin-left 10px
+		a
+			margin-left .5em
+			font-size 1.3em
+			color white
+	.opcionesMenu
+		display table-caption
+		padding 0em 3em
+		position inherit
+		div 
+			margin 1.3em 0
+			border-bottom 1px solid white
+			width 14em
+			padding-bottom 1em
+			a
+				margin 1em 0
+				color white
+				padding 1em 10em 1em 0em
+
+
+
+@media screen and (min-width: 700px)
+	body
+		background gris_mas_claro
+
+	.header
+		height auto
+		font-family Arial
+		border none
+		.title
+			display none
+
+	.menu
+		display block
+		background gris_mas_claro
+		overflow hidden
+		height auto
+		border-top 1px solid azul_app
+		padding-bottom 1em
+		.item
+			float left
+			list-style none
+			a
+				color gris_oscuro
+				text-transform uppercase
+				cursor pointer
+				padding 1em
+				display block
+				border-top 5px solid transparent
+				&:hover
+					border-top 5px azul_app solid 
+					transition .3s border-top
+
+	.button-menu
+		display none
+
+	.wrap
+		width 1000px
+
+		
+	.set
+		position relative 
+		top -40px
+	
+
+	.round
+		border-radius 50%
+		overflow hidden
+
+
+	.logo
+		display block
+		background azul_contraste
+		height 100px
+
+
+			
+	.image
+		height 3em
+		margin-top 20px
+		img
+			height 4em
+			width 4em
+
+	.title3D
+		font-family Courier, monospace
+		line-height 1em
+		color white
+		font-weight bold
+		font-size 45px
+		text-shadow 0px 0px 0 rgb(53,167,209),0px 1px 0 rgb(42,156,198),0px 2px 0 rgb(32,146,188),0px 3px 0 rgb(21,135,177),0px 4px 0 rgb(10,124,166), 0px 5px 0 rgb(-1,113,155),0px 6px 5px rgba(0,0,0,0.9),0px 6px 1px rgba(0,0,0,0.5),0px 0px 5px rgba(0,0,0,.2)
+		width 10em
+		height 1em
+		position absolute
+		margin-top -43px
+		margin-left 70px
+		text-align center
+		&:hover
+			text-shadow 1px 1px 2px black, 0 0 1em azul_app, 0 0 0.2em azul_app;
+	
+	.resize
+		width 13em
+		height 13em
+
+		
+	.miPerfil
+		font-family sans-serif
+		position relative 
+		height auto 
+		width auto
+		margin 5em 0 0 15em
+		figure
+			margin-top 2.5em
+		table
+			font-family sans-serif
+			width 35em
+			border-collapse collapse
+			position absolute
+			margin-left 20em
+			border 2px solid azul_contraste
+			border-width 1px
+			border-spacing 2px 
+			td
+				padding 1em
+				text-align center
+			thead
+				color azul_app
+				background azul_contraste
+	
+	
+	.fixpos
+		position absolute
+		margin-top 15em
+		margin-left -9.8em
+		font-size 1.1em
+
+	.butonEdit
+		font-family Futura
+		height 3em
+		width 5em
+		float right
+		background azul_app
+		border-radius 3px 
+		text-align center
+		margin-top -6em
+		margin-right 6em
+		position relative
+		a
+			color white
+			padding 1em 
+			margin -3px -38px
+			position absolute
+	
+	.input
+		margin 0 auto
+		color azul_contraste
+		height 4em
+		width 20em
+		margin-top 1em
+		background white
+		span
+			float left
+			margin-top .8em
+			margin-right 25px
+			color gris_claro
+			font-size 1.5em
+		input
+			margin-top .3em
+			padding 1em 1.1em
+			border 1px solid gris_claro
+			border-radius 5px
+			border-style solid
+			border-width 1px
+			border-color white
+		.mail-icon
+			font-size 1em
+			margin-right 25px
+			margin-top 1.5em
+
+	.boton
+		margin 0 auto
+		height 4em
+		width 18em
+		margin-top 2em
+		background azul_app
+		border-radius 5px
+		a
+			padding .75em 4.85em
+			position absolute
+			text-decoration none
+			font-size 1.5em
+			color white
+		.boton-registro
+			padding .75em 3.8em
+
+	.editarInfo 
+		height 600px
+
+	footer
+		font-family Futura
+		background azul_contraste
+		height 3.5em
+		weight auto
+		position relative
+		bottom 0 
+		display block
+		.about
+			text-decoration underline
+			float right
+			position static
+		a
+			font-size .9em
+			color azul_app
+			margin-right .5em
+			padding 1em
+			margin-top 3px
+		span
+			position absolute
+			margin 1.25em 0 0 1em
+			color azul_app
+			font-size .9em
+		.icon
+			float left
+			font-size 1.2em
+			margin-top .65em
+			margin-left .5em
+			height 1.7em
+	
+	.hide
+		display none
+	
+ 	.misDibujos
+ 		display inline-block
+ 		border 1px solid black
+
+ 	.dibujo
+ 		width 50px
+ 		height 50px
+ 		border 1px solid black
+	
+

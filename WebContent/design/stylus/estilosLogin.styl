@@ -1,0 +1,365 @@
+@import "nib"
+@import "normalize.styl"
+@import "fonts.styl"
+
+gris_oscuro = #333333
+gris_claro = #818181
+gris_mas_claro = #F0F0F0
+gris_footer = rgba(38,38,38,1)
+azul_app = rgba(0, 191, 219, 1)
+color_facebook = rgba(47, 69, 134, 1)
+color_twitter = rgba(79, 152, 213, 1)
+
+
+body
+	background gris_mas_claro
+	font-size 16px
+
+header
+	display none
+
+figure
+	margin 0
+
+img
+	vertical-align 0
+
+a
+	text-decoration none
+
+footer
+	background gris_footer
+	height 3.5em
+	weight auto
+	position relative
+	bottom 0 
+	display block
+	.about
+		text-decoration underline
+		float right
+		position static
+	a
+		font-size .9em
+		color azul_app
+		margin-right .5em
+		padding 1em
+		margin-top 3px
+	span
+		position absolute
+		margin 1.25em 0 0 1em
+		color azul_app
+		font-size .9em
+	.icon
+		float left
+		font-size 1.2em
+		margin-top .65em
+		margin-left .5em
+		height 1.7em
+
+
+.createA
+	display none
+
+.presentation
+	margin 0 auto
+
+.share
+	background-image url("../blur-colors.jpg")
+	background-repeat no-repeat 
+	display block
+	width auto
+
+.Three-Dee
+	font-family Courier, monospace
+	line-height 1em
+	color white
+	font-weight bold
+	font-size 55px
+	text-shadow 0px 0px 0 rgb(53,167,209),0px 1px 0 rgb(42,156,198),0px 2px 0 rgb(32,146,188),0px 3px 0 rgb(21,135,177),0px 4px 0 rgb(10,124,166), 0px 5px 0 rgb(-1,113,155),0px 6px 5px rgba(0,0,0,0.9),0px 6px 1px rgba(0,0,0,0.5),0px 0px 5px rgba(0,0,0,.2)
+	width 5em
+	height 2em
+	text-align center
+	
+
+
+.name
+	color gris_oscuro
+
+.descrip
+	color gris_claro
+	background gris_mas_claro
+	p
+		padding 0
+		margin-top 0
+		margin-bottom 0
+
+.share-button
+	width 250px
+	height 55px
+	border-radius 4px
+	margin 1em 0
+	position relative
+	&.facebook
+		background color_facebook
+		display none
+	&.twitter
+		background color_twitter
+
+.icon-twitter
+.icon-facebook
+	position absolute
+	color white
+	left 0
+	font-size 1.6em
+	padding .6em 8.5em .6em .5em
+	display none
+
+.social
+	margin 1.3em
+	position absolute
+	color white
+	right 0
+	
+
+.border-right-white
+	border-right 3px solid white
+
+.caracteristica
+	.descrip
+		text-align center
+		margin 1em 0
+
+	img
+		width 100%
+		height auto
+		vertical-align bottom
+	p
+		padding .2em
+		margin 0
+
+.relative
+	position relative
+
+.center-contenido
+	margin 0 auto
+	width 15.7em
+	padding 2em 0
+
+
+.image
+	display none
+	img
+		margin 0 auto	
+		vertical-align bottom		
+
+
+.user
+	background gris_mas_claro
+	height 60px
+	width auto
+
+.line-top
+	border-top 1px solid gris_claro
+
+.user
+	a
+		padding 1.7em
+		position absolute
+		color gris_claro
+		text-decoration underline
+		font-size .8em
+
+	
+.right
+	left 0
+	margin-left 40px
+
+.left
+	right 0
+	margin-right 40px
+
+.head
+	display none
+
+.registro 
+	display none
+	width auto
+	background white
+	.login
+		height 22em
+	.account
+		height 30em
+	p
+		text-align center
+		padding-top 1.2em
+		font-size 1.3em
+
+.input
+	margin 0 auto
+	height 4em
+	width 17.1em
+	margin-top 1em
+	span
+		float left
+		margin-top 1.5em
+		margin-right 10px
+		color gris_claro
+		font-size 1.2em
+	input
+		margin-top 1em
+		padding 1em 1.1em
+		border 1px solid gris_claro
+		border-radius 5px
+	.mail-icon
+		font-size .95em
+		margin-right 6.5px
+		margin-top 2.3em
+
+
+.boton
+	margin 0 auto
+	height 4em
+	width 18em
+	margin-top 2em
+	background azul_app
+	border-radius 5px
+	a
+		padding .75em 4.85em
+		position absolute
+		text-decoration none
+		font-size 1.5em
+		color white
+	.boton-registro
+		padding .75em 3.8em
+
+.line
+	margin 1.5em auto
+	width 70em
+	height 1px
+	background gris_oscuro
+	border-radius 50%
+	
+
+@media screen and (min-width: 420px)
+	
+	header
+		display none
+
+	.listen-now
+		display none
+
+	.right
+		margin-left 100px
+
+	.left
+		margin-right 100px
+
+@media screen and (min-width: 1000px)
+	
+	.Three-Dee
+		font-size 80px
+	.head
+		display block
+
+	.user
+		display none
+
+	.foot
+		margin 0 auto
+	
+	.people
+		img
+			height 100px
+			width 100px 
+			border-radius 50%
+	
+	.not-show
+		display none	
+
+	.contenido
+		height 20em
+
+
+	header
+		position absolute
+		display block
+		height 100px 
+		width auto
+		a
+			position fixed
+			font-size 1.3em
+			text-decoration underline
+			color azul_app
+			padding 2em
+			margin-left 53em
+			width 3em
+			&:hover
+				text-shadow 1px 1px 2px black, 0 0 1em white, 0 0 0.2em white;
+
+
+	.image-head
+		position fixed
+		margin 1em 0 0 3em
+		padding 1em 0
+		height 60px
+	
+
+	.login-head
+		position fixed
+
+		
+	
+	.text
+		font-size 1.5em
+	
+	.contenido
+		width 25em
+		padding 4em 0
+
+	.share-button
+		margin-left 4.5em	
+		margin-top 2em
+		display block
+
+	.createA
+		font-size 1em
+		color azul_app
+		height 25px
+		article
+			margin-left 3.8em
+			float left
+			color white
+		a
+			text-decoration underline
+			float right
+			color azul_app
+			margin-right 3.1em
+			&:hover
+				text-shadow 1px 1px 2px black, 0 0 1em white, 0 0 0.2em white;
+
+
+	.descrip
+		margin-left 40%
+
+	.caracteristica
+		figure
+			margin 0 auto
+		img
+			height 170px
+			width 170px
+			padding 1.5em
+			margin-left 40%
+	
+	.forgotPass
+		color azul_app
+		margin-left 35.5em
+		&:hover
+			text-shadow 1px 1px 2px black, 0 0 1em white, 0 0 0.2em white;
+	
+	.olvidoContra
+		margin-top 2em
+
+	.olvidoPass
+		display none
+
+

@@ -1,0 +1,194 @@
+body{
+	font-size: 16px;
+	background: white;
+	position: relative;
+	background: slategray;
+	/*background-image: url('madera.jpg');*/
+}
+
+.herramientas1{
+	height: 500px;
+	width: 120px;
+	float: left;
+	position: absolute;
+	background: rgba(226,226,226,0.5);
+	margin-top:100px; 
+	border-radius: 0px 15px 15px 0px;
+	border-top: 2px solid black;
+	border-right: 2px solid black;
+	border-bottom: 2px solid black;
+	display: inline-block;
+	z-index: 1;
+}
+.herramientas1 div {
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+.lapices div{
+	margin-top: 13px;
+	margin-left: 15px;
+}
+
+.herramientas2{
+	height: 500px;
+	width: 120px;
+	float: right;
+	position: absolute;
+	background: rgba(226,226,226, 0.5);
+	right: 0;
+	margin-top:-660px; 
+	border-top: 3px solid black;
+	border-left: 3px solid black;
+	border-bottom: 3px solid black;
+	border-radius: 15px 0px 0px 15px;
+}
+
+.contenedor{
+	display: block;
+	margin: 0 auto;
+	width: 900px;
+	height: 760px;
+}
+
+.lienzo{
+	border:1px solid rgb(226,226,226);
+	box-shadow: 0 0 3em black;
+	background: white;
+	margin-top: 30px;
+	position: absolute;
+	cursor:  pointer;	
+}
+
+
+#tmp_canvas{
+	position: absolute;
+	cursor: crosshair;
+	margin-top:30px; 
+}
+
+.paletaColores{
+	margin-top: 20px;
+	margin-left: 20px;
+	width: 90px;
+	height: 300px;
+}
+
+.color{
+	background: gray;
+	height: 20px;
+	width: 20px;
+	display: inline-block;
+	border-radius: 50%;
+	margin: 2px 2px;
+}
+
+.mas{
+	position: absolute;
+	margin-left: 6px;
+	background: white;
+}
+.color p{
+	font-size: 1.5em;
+	color: gray;
+	margin-top: -11px;
+	margin-left: 2.5px;
+}
+
+.color:hover{
+	box-shadow: 0 0 1.5em gold;
+}
+
+.instrucciones{
+	display: none;
+}
+
+.lapices{
+	margin-left: 35px;
+}
+
+.figuras1{
+	width: 75px;
+	height: 192px;
+	margin-left: 20px;
+}
+.figuras1 img{
+	padding: 5px;
+	width: 35px;
+	height: 35px;
+	margin-top: 5px; 
+}
+.figuras1 img:hover{
+	box-shadow: 0 0 1.5em gold;
+}
+
+.gruesos{
+	width: 90px; 
+	height: 80px;
+	margin-left: 25px;
+	margin-top: -90px;
+}
+
+.gruesos div{
+	margin-top: 10px;
+	background: black;
+	width: 70px;
+}
+
+.gruesos div:hover{
+	box-shadow: 0 0 1.5em gold;
+}
+
+.giros{
+	width: 100px;
+	height: 20px;
+	display: inline-flex;
+	margin-top: 25px;
+	margin-left: 25px;
+}
+
+#giroDerecha, #giroIzquierda{
+	border-radius: 50%;
+	background: transparent;
+	height: 35px;
+	width: 32px;
+}
+
+#giroIzquierda{
+	margin-left: 15px;
+}
+
+#textBox{
+	width: 60px;
+	height: 50px;
+	margin-left: 30px;
+	margin-top: 30px;
+}
+#textBox:hover{
+	box-shadow: 0 0 1.5em gold;
+}
+#text_tool{
+	position: relative;
+}
+#text_tool {
+	position: absolute;
+	border: 1px dashed black;
+	outline: 0;
+	display: none;
+	
+	font: 10px Verdana;
+	overflow: hidden;
+	white-space: nowrap;
+}
+#tmp_canvas1 {
+	position: absolute;
+	left: 0px; right: 0;
+	bottom: 0; top: 0;
+	cursor: crosshair;
+}
+.nombreDibujo{
+	width: 250px;
+	position: absolute;
+	top: 4px;
+	left: 40%;
+}

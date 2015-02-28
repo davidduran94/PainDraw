@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- <meta http-equiv="refresh" content="0;/ProyectoFinalPaint/ControladorDibujos"> -->
+	<meta charset="UTF-8">
+	<title>Paint & Draw</title>
+	<link rel="shortcut icon" type="image/x-icon" href="design/paint-icono.png"/>
+	<meta name = "viewport"  content= "width= device-width, initial-scale=1 maximum-scale=1"/>
+	<link rel="stylesheet" href="design/foundation/css/foundation.css">
+	<link rel="stylesheet" href="design/css/estilosPaint.css">
+	<link rel="stylesheet" href="design/css/normalizer.css">
+	<link rel="stylesheet" media="screen" type="text/css" href="javascripts/colorpicker/css/colorpicker.css" /> 
+</head>
+<body>
+	<nav class="top-bar" data-topbar>
+	  <ul class="title-area">
+	    <li class="name">
+	      <h1><a href="#">Paint & Draw</a></h1>
+	    </li>
+	     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+	    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+	  </ul>
+
+	  <section class="top-bar-section">
+	    <!-- Right Nav Section -->
+	    <ul class="right">
+	      <li class="active"><a  id="botonGuardarCanvas" href="#">Guardar</a></li>
+	      <li class="active" style="margin-left: 10px;"><a  id="botonDescargarCanvas" href="#">Descargar</a></li>
+	      <li class="has-dropdown">
+	        <a href="#" id="botonSalir">Salir</a>
+	        <ul class="dropdown">
+	        <li><a href="#">Usuario</a></li>
+	          <li><a href="#">Salir</a></li>
+	        </ul>
+	      </li>
+	    </ul>
+
+	    <!-- Left Nav Section -->
+	    <ul class="left">
+	      <li><a href="inicio.html">Inicio</a></li>
+	    </ul>
+	  </section>
+	</nav>
+	
+	<div class="nombreDibujo"><span href="#" class= "icon-user"></span><input style="text-align:center" id="txtNombreDibujo" type="text" placeholder = "Dibujo sin título" required></div>
+	
+	<div></div>
+	
+	<div class="herramientas1">
+		<div class="lapices">
+		<div><a href="#" id="lapiz"><img src="design/lapiz.png" style="width:40px; height:40px;"></a></div>
+		<div><a href="#" id="plumon"><img src="design/plumon.png" style="width:40px; height:40px;"></a></div>
+		<div><a href="#" id="aerosol"><img src="design/aerosol.png" style="width:40px; height:40px;"></a></div>
+		<div><a href="#" id="goma"><img src="design/goma.png" style="width:40px; height:40px;"></a></div>
+		</div>
+		<div class="figuras1">
+			<img id="cuadradoRelleno" src="design/iconos/cuadrado1.png" alt="">
+			<img id="cuadradoDinamico" src="design/iconos/cuadrado2.png" alt="" id="cuadradoMovible">
+			<img id="circuloRelleno" src="design/iconos/circulo1.png" alt="">
+			<img id="circuloDinamico" src="design/iconos/circulo2.png" alt="">
+			<img id="triangulo" src="design/iconos/triangulo1.png" alt="">
+			<img id="triangulo" src="design/iconos/triangulo2.png" alt="">
+			<img id="hexagonoRelleno" src="design/iconos/hexagono1.png" alt="">
+			<img id="hexagonoDinamico" src="design/iconos/hexagono2.png" alt="">
+			<img id="elipseRellena" src="design/iconos/ovalo1.png" alt="">
+			<img id="elipseDinamica" src="design/iconos/ovalo2.png" alt="">
+			<img id="linea" src="design/iconos/linea1.png" alt="">
+			<img id="linea1" src="design/iconos/linea2.png" alt="">
+		</div>
+		<div class="figuras2">
+			
+		</div>
+	</div>
+	<section id="sketck" class="contenedor">
+		<div id="sketch">
+		<canvas class="lienzo" id="hoja" width="900" height="700"></canvas>
+		</div>
+	</section>
+	<div class="herramientas2">
+		<div class="paletaColores">
+			<div class="color" id="color0" style="background: #800000;"></div>
+			<div class="color" id="color1" style="background: #ff0000;"></div>
+			<div class="color" id="color2" style="background: #ffA500;"></div>
+			<div class="color" id="color3" style="background: #ffff00;"></div>
+			<div class="color" id="color4" style="background: #808000;"></div>
+			<div class="color" id="color5" style="background: #800080;"></div>
+			<div class="color" id="color6" style="background: #800080;"></div>
+			<div class="color" id="color7" style="background: #ff00ff;"></div>
+			<div class="color" id="color8" style="background: #00ffa2;"></div>
+			<div class="color" id="color9" style="background: #00ff00;"></div>
+			<div class="color" id="color10" style="background: #008000;"></div>
+			<div class="color" id="color11" style="background: #000080;"></div>
+			<div class="color" id="color12" style="background: #0000ff;"></div>
+			<div class="color" id="color13" style="background: #00ffff;"></div>
+			<div class="color" id="color14" style="background: #008080;"></div>
+			<div class="color" id="color15" style="background: #000000;"></div>
+			<div class="color" id="color16" style="background: #c0c0c0;"></div>
+			<div class="color" id="color17" style="background: #808080;"></div>
+			<div class="color" id="color18" style="background: #572b04;"></div>
+			<div class="color" id="color19"></div>
+			<div class="color mas" id="color20"><p>+</p></div>
+		</div>
+		<div class="gruesos">
+			<div id="grueso1" style="height: 2px;"></div>
+			<div id="grueso2" style="height: 5px;"></div>
+			<div id="grueso3" style="height: 8px;"></div>
+			<div id="grueso4" style="height: 11px;"></div>
+			<div id="grueso5" style="height: 14px;"></div>
+		</div>
+		<div class="giros">
+			<div id="giroIzquierda"><img src="design/giro.png" style="width:35px; height:30px;"></div>
+		</div>
+		<img id="textBox" src="design/iconos/textBox.png" alt="">
+	</div>
+
+  <hgroup class="instrucciones" id="instruc">
+    <h1>¡Dibujemos!</h1>
+    <h2>Dibuja en cualquier lugar con tu cursor</h2>
+    <h3>Si quieres un canvas nuevo simplemente refresca la página</h3>
+  </hgroup>
+
+	<!-- Scripts y dependencias de desarrollo -->
+	<script type="text/javascript" src="javascripts/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="javascripts/jCanvas.js"></script>
+  	<script type="text/javascript" src="javascripts/colorpicker/js/colorpicker.js"></script>
+  	<script type="text/javascript" src="javascripts/script.js"></script>
+  	<script type="text/javascript" src="javascripts/canvas2image.js"></script>
+  	<script type="text/javascript" src="javascripts/base64.js"></script>
+  	<script type="text/javascript" src="javascripts/conexionServlets.js"></script>
+  	<script type="text/javascript" src="design/foundation/js/foundation.min.js"></script>
+  	<script type="text/javascript" src="design/foundation/js/foundation/foundation.topbar.js"></script>
+
+</body>
+</html>

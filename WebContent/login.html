@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<link rel="shortcut icon" type="image/x-icon" href="design/paint-icono.png"/>
+	<meta charset="UTF-8"/>
+	<meta name = "viewport"  content= "width= device-width, initial-scale=1 maximum-scale=1"/>
+	<link rel="stylesheet" href="/ProyectoFinalPaint/design/css/estiloslogin.css"/>
+	<script type="text/javascript" src="javascripts/jquery-2.1.0.js"></script>
+	<title>Login</title>
+</head>
+<body>
+	<header>
+		<img src="design/paint-icono.png " class="image-head">
+		<a href="login.html" class="login-head alogin">Log in</a>
+	</header>
+	
+	<section class="presentation">
+		<div class="share">
+			<div class="contenido center-contenido">
+				<figure class="image not-show">
+					
+				</figure>
+				<article class="Three-Dee">
+					Paint & Draw
+				</article>
+				<div class="share-button facebook ">
+					<a href="" class="icon-facebook"></a>
+					<article class = "social">Conéctate con Facebook</article>
+				</div>
+				<div class="share-button createA">
+					<article class ="create">o</article>
+					<a href="#" class="createAccount">Crea una cuenta</a>
+				</div>
+				
+			</div>
+		</div>
+		<div class="user">
+			<a class= "right line-right alogin" href="#" id = "">Log in</a>
+			<a class= "left createAccount" href="#" id="">Crear cuenta</a>
+		</div>
+		<section class = "registro login" id="loginFormulario">
+			<p>Log in</p>
+			<form>
+				<div class="input">
+					<span href="#" class= "icon-user"></span>
+					<input id="txtNombreUsuarioLog" type="text" placeholder="Nombre de usuario o email" required>
+				</div>
+				<div class="input">
+					<span href="#" class= "icon-lock"></span>
+					<input id="txtPassLog" type="password" placeholder="Contraseña" required>
+				</div>
+				<div class="olvidoContra">
+					<a href="" class="forgotPass">¿Olvidaste tu constraseña?</a>
+				</div>
+				<div class="boton">
+					<a id="botonLogin" href="#" class="ForgotPass">Entrar</a>
+				</div>
+				<div class= "line"></div>
+			</form>
+		</section>
+		<section class = "registro account" id="CreateAccountForm">
+			<p>Crea una Cuenta</p>
+			<form>
+				<div class="input">
+					<span href="#" class= "icon-user"></span>
+					<input id="txtNombreUsuario" type="text" placeholder = "Nombre de Usuario" required>
+				</div>
+				<div class="input">
+					<span href="#" class= "icon-mail mail-icon"></span>
+					<input id="txtEmail" type="text" placeholder="Email" required>
+				</div>
+				<div class="input">
+					<span href="#" class= "icon-lock"></span>
+					<input id="txtPass" type="password" placeholder="Elige una contraseña" required>
+				</div>
+				<div class="input">
+					<span href="#" class= "icon-lock"></span>
+					<input id="txtConfirmarPass" type="password" placeholder="Confirma contraseña" required>
+				</div>
+				<div class="boton">
+					<a href="#" id="botonRegistro" class="boton-registro">Regístrate</a>
+				</div>
+				<div class= "line"></div>
+			</form>
+		</section>
+		<section class="olvidoPass registro" id="formOlvidoPass">
+			<p>Recuperación de Contraseña</p>
+			<form>
+				<div class="input">
+					<span href="#" class= "icon-user"></span>
+					<input id="txtMailRecup"type="text" placeholder="Escriba su email" required>
+				</div>
+				<div class="boton">
+					<a id="botonRecuperacion" href="#" class="boton-recuperacion">Enviar</a>
+				</div>
+				<div class= "line"></div>
+			</form>
+		</section>
+		<div class="caracteristica">
+			<figure class="img people">
+				<img src="design/imagen2.jpg" height = "200" width = "auto" >
+			</figure>
+			<article class="descrip">
+				<p class="name">Dibuja Facilemente</p>
+				<p class="">Diseña tus propios dibujos con todas las herramientas incluídas</p>
+			</article>
+		</div>
+		<div class="caracteristica">
+			<figure class="img people">
+				<img src="design/imagen1.jpg" alt="">
+			</figure>
+			<article class="descrip">
+				<p class="name">Herramientas</p>
+				<p class="">Utiliza diversas figuras</p>
+			</article>
+		</div>
+		<div class="caracteristica line-top listen-now">
+			<article class= "descrip"><p>Empieza a dibujar ya</p></article>
+		</div>
+	</section>
+	
+	<footer>
+		<div class="foot">
+			<img src="design/paint-icono.png" class="icon"/>	
+			<span>Paint & Draw</span>
+			<a href="www.isc.escom.ipn.mx" class = "about">ESCOM 2014</a>
+			<a href="www.ipn.mx" class= "about">IPN</a>
+		</div>
+	</footer>
+	<script type="text/javascript" src="javascripts/handlebars-v1.3.0.js"></script>
+	<script src= "javascripts/prefix.js"></script>
+	<script type="text/javascript" src="javascripts/conexionServlets.js"></script>
+</body>
+</html>

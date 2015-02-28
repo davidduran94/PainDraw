@@ -1,0 +1,82 @@
+body{
+	background: rgb(51,51,51);
+}
+
+.misDibujos{
+ 	margin: 0 auto;
+ 	width: 850px;
+ 	height: 800px;
+ 	margin-left: 250px;
+ 	margin-bottom: 20px;
+ }
+
+.dibujo{
+	width: 200px;
+ 	height: 254px;
+ 	border: 3px solid rgb(22,108,164);
+ 	padding: 4px;
+ 	border-radius: 10px;
+ 	margin-right: 55px;
+ 	margin-top: 15px;
+ 	display: inline-block;
+ 	margin-bottom: 30px;
+}
+
+.menu{
+	background: rgb(51,51,51);
+}
+
+#perfilActual{
+	color: white;
+}
+
+#cambiarDatos{
+	color: white;
+}
+
+.descargar{
+	width: 200px;
+	height:30px;
+}
+
+.imagen{
+	width: 200px;
+ 	height: 200px;
+}
+
+#ver{
+	margin-left: 10px;
+	padding: 5px;
+	margin-top: 5px;
+}
+
+#desc{
+	margin-right: 10px;
+	padding: 5px;
+	margin-top: 5px;
+}
+
+.editarInfo{
+	display: none;
+}
+
+#myDraws{
+	color: white;
+}
+
+.colorW{
+	color: white;
+}
+.derecho{
+	float: right;
+	margin-top: 7px;
+}
+.izquierdo{
+	float: left;
+	margin-top: 7px;
+}
+.centro{
+	text-align: center;
+	overflow: hidden;
+	margin-top: 7px; 
+}
